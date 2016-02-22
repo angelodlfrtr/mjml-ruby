@@ -4,6 +4,12 @@ Ruby parser for mjml templates [https://mjml.io/](https://mjml.io/)
 
 ## Installation
 
+Instal mjml bin from npm :
+
+```bash
+[sudo] npm install -g mjml
+```
+
 Add this line to your application's Gemfile:
 
 ```ruby
@@ -20,7 +26,11 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+template = File.read('my_template.mjml')
+Mjml::Parser.new(template)
+Mjml.render # => return result as plain html
+```
 
 ## Development
 
