@@ -28,8 +28,9 @@ Or install it yourself as:
 
 ```ruby
 template = File.read('my_template.mjml')
-Mjml::Parser.new(template)
-Mjml.render # => return result as plain html
+parser   = Mjml::Parser.new(template)
+
+parser.render # => return result as plain html
 ```
 
 ## Development
