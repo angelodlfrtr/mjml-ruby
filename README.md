@@ -4,7 +4,7 @@ Ruby parser for mjml templates [https://mjml.io/](https://mjml.io/)
 
 ## Installation
 
-Instal mjml bin from npm :
+Install mjml bin from npm :
 
 ```bash
 [sudo] npm install -g mjml
