@@ -1,7 +1,6 @@
 require "mjml/version"
 
 module Mjml
-
   autoload :Parser, 'mjml/parser'
 
   module Rails

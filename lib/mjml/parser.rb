@@ -1,3 +1,5 @@
+require 'fileutils'
+
 module Mjml
   class Parser
 
@@ -18,7 +20,6 @@ module Mjml
       remove_tmp_files
       result
     rescue
-
       ""
     end
 
@@ -55,7 +56,6 @@ module Mjml
       #
       # @return [String]
       def out_tmp_file
-
         @_out_tmp_file ||= "#{tmp_dir}/out_#{(0...8).map { (65 + rand(26)).chr }.join}"
       end
 
@@ -63,7 +63,6 @@ module Mjml
       #
       # @return [String]
       def in_tmp_file
-
         @_in_tmp_file ||= "#{tmp_dir}/in_#{(0...8).map { (65 + rand(26)).chr }.join}"
       end
 
