@@ -28,7 +28,7 @@ module Mjml
     # @return [String] The result as string
     def run
       `#{mjml_bin} -r #{in_tmp_file} -o #{out_tmp_file}`
-      file = File.open(out_tmp_file, 'r')
+      file = File.open(out_tmp_file.concat('.html'), 'r')
       str  = file.read
       file.close
       str
